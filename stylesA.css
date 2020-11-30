@@ -1,0 +1,169 @@
+/*------------------Beginning of HEADER----------------------*/
+a{
+text-decoration: none;
+}
+
+
+#head_R{
+height:120px;
+background: white;
+display: flex;
+flex-direction: column;
+
+}
+h1 a{
+color:#041F33;
+}
+h2{	
+font-family: 'Dancing Script', cursive;
+color:#041F33;
+margin: 0px;
+padding-top: 15px;
+}
+
+#lower_Deco{
+margin: 12px;
+margin: 15px;
+width: 91%;
+}
+
+#line_Ink{
+height: 2px;
+background: black;
+width: 70%;
+}
+#deco_In_Header{
+height: 50px;
+width: 85px;
+transform:scaleX(-1);
+}
+
+/*end HEADER*/
+/*-----------------INDEX.PHP CSS STYLES--------------------*/
+
+#bot{
+background:rgba(255,255,255,0.8);
+height:50px;
+}
+/*Page D'accueil*/
+.acc{/*H1 accueil*/
+/*font-family: 'Tangerine', cursive;*/
+font-family: 'Dancing Script', cursive;
+color:#041F33;
+font-size: 5em;
+margin: auto;
+padding-top:10px;
+text-align: center;
+}
+.titre_d{/*H2 accueil*/
+text-align: right;
+margin-right: 10px;
+font-family: 'Dancing Script', cursive;
+color: #041F33;
+}
+#entete_Presentation{
+background:rgba(255,255,255,0.8);
+display: flex;
+flex-direction: column;
+height: 100%;
+}
+/*Section*/
+#middle{
+background:rgba(255,255,255,0.8);
+height:735px;
+/*border-top: #094a7833 inset 5px;
+border-bottom: #094a7833 inset 5px;*/
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+#midDeco{
+background: white;
+width:80%;
+height: inherit;
+border-left: solid #052942;
+border-right:  solid #052942;
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+h3{
+font-size: 1em;
+font-family: 'Arial';
+text-decoration: underline;
+}
+#summary{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 80%;
+margin: auto;
+
+}
+figure img {
+height: 150px;
+text-align: center;
+}
+
+#citation{
+width: inherit;
+font-style: italic;
+text-align: center
+}
+#citation a{
+text-decoration: underline;
+color:#041F33;
+}
+#intro{
+font-family: 'Arial';
+color:#041F33;
+font-size: 1em;
+text-align: center;
+}
+#imaTrain{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+figcaption{
+font-size: 0.7em;
+}
+figcaption a{
+font-family: 'Arial';
+color: black;
+font-size: 0.6em;
+}
+figcaption a:hover{
+font-size: 0.8em;
+}
+#laucher{
+margin:auto;
+}
+#home{
+height:35px;
+width:30%;
+margin: auto;
+background: #094A78;
+border-radius: 10px;
+border: 2px solid white;
+font-family: 'Arial';
+padding: 10px;
+}
+#home a{
+color: white;
+font-size: 1.2em;
+
+}
+/*SURVOL SOURIS*/
+#home a:hover{
+background: #052942;
+height: inherit;
+/*font-weight: bold;*/
+}
+
+
+/*FIN SURVOL SOURIS */
+
+/*Fin Page d'accueil*/

@@ -1,0 +1,25 @@
+nav ul{ 
+list-style-type: none; 
+background-color: #052942;
+margin-right: 20px;
+padding: 5px;
+border-radius: 5px;
+max-height: 50px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+ul li{
+border-right: white solid 2px;
+padding: 5px;
+text-align: center;
+width: 33%;
+}
+nav a{
+color:white;
+font-family: 'Raleway';
+}
+
+nav a:hover{
+color:white;
+}

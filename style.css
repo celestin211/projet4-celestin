@@ -1,0 +1,589 @@
+/* ---------------------------------------- */
+/* ==            SUMMARY              */
+/*---------------------------------------- */
+
+/* L 1		- 1 - SUMMARY*/
+/* L 16		- 2 - COLOR CODES*/
+/* L 31		- 3 - MAIN ELEMENTS*/
+/* L 136    - 4 - HOME PAGE*/
+/* L 226    - 5 - SUBSCRIBE PAGE */
+/* L 237    - 6 - LOGIN PAGE*/
+/* L 245    - 7 - ROMAN PAGE*/
+/* L 274    - 8 - POST PAGE*/
+/* L 309    - 9 - ABOUT ME PAGE*/
+/* L 316    - 10 - ADMIN PART*/
+/* L 452    - 11 - MEDIA QUERIES */
+/* ---------------------------------------- */
+/* ==       COLOR CODES           */
+/*---------------------------------------- */
+/*
+Black (text) :			#000
+Dark gray (links, h1) :		#008dde
+Mid gray (visited links) :	#0006a1
+Light gray (h2) :		#747474
+ #656582
+ #6c757d
+ #ea7e7e
+ cornflowerblue;
+ rgba(35, 37, 76, 0.9);
+*/
+
+/* ---------------------------------------- */
+/* == MAIN ELEMENTS */
+/*---------------------------------------- */
+
+/*     GENERAL      */
+html
+{
+    height: 100%;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+.firstContainer
+{
+    margin-top: 200px;
+}
+a
+{
+    color: white;
+}
+h2
+{
+    color: cornflowerblue;
+}
+a:hover
+{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+div.mainSection
+{
+    min-height: 500px;
+}
+.mainColorBg
+{
+    background: #656582 !important;
+    border: #656582 !important; 
+    color: white !important;
+}
+
+/*     HEADER / NAVBAR TOP      */
+
+.fixMainBarr
+{
+    background: rgba(35, 37, 76, 0.9);
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top ul.nav.navbar-nav
+{
+    flex-direction: column;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3
+{ 
+    display: flex;
+    justify-content: center;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3 button.btn.btn-secondary.dropdown-toggle
+{
+    flex:0;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3.show div.dropdown-menu.dropdown-menu-lg-right.show
+{
+    right:auto;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 li
+{
+    align-self: flex-start;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top a p 
+{
+    margin: auto 0;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top a.navbar-brand
+{
+    margin-right: 0;
+    font-size: 2rem;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top p.welcomHome
+{
+    color: white;
+    font-style: italic;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top p.welcomHome span.welcomLogin
+{
+    color: green;
+}
+nav.fixMainBarr.main-navbar.navbar.fixed-top p.welcomHome:hover
+{
+    color:cornflowerblue;
+    font-style: normal;
+}
+/*     FOOTER      */
+footer
+{
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer.container-fluid p
+{
+    color:lightgray;
+}
+/* ---------------------------------------- */
+/* ==            HOME PAGE                */
+/*---------------------------------------- */
+
+/*     BANNER      */
+#banner
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(../images/train1.jpg) no-repeat center center;
+    height: 800px;
+    width: 100%;
+}
+header#banner div.home_Main_Title.col-md-6
+{
+    color: white; 
+}
+header#banner div.home_Main_Title.col-md-6 h1
+{
+    border: 4px solid white;
+}
+
+/*     CHAPTER SECTION      */
+.chapter_slim
+{
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 300px;
+}
+div#previewChapter.container-fluid 
+{
+    border: 5px solid #23254c;
+    background: black;
+    color: white;
+}
+
+#previewChapter section div h2
+{
+    text-align: center;
+}
+#previewChapter.container-fluid div.jumbotron
+{
+    background: rgba(35, 37, 76, 0.7);
+}
+#previewChapter.container-fluid div.post-comments
+{
+    border-bottom: 1px solid lightgray;
+}
+#previewChapter.container-fluid div.post-comments p.meta
+{
+    font-style: italic;
+}
+#previewChapter.container-fluid div.post-comments p.homeLastComment
+{
+    font-weight: bold;
+}
+#previewChapter.container-fluid div.post-comments span.homeAuthorComment
+{
+    color: cornflowerblue;
+}
+#previewChapter.container-fluid h3
+{
+    margin: 40px 0;
+}
+/*     WRITER WORD SECTION     */
+#home_words
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background: url(../images/aurore2.jpg)no-repeat center center;
+    background-attachment: fixed;
+}
+#home_words div
+{
+    background: none;
+    text-align: center;
+    color: white;
+}
+#home_words div h2
+{
+    color: white;
+}
+
+/* ---------------------------------------- */
+/* ==            SUBSCRIBE PAGE                */
+/*---------------------------------------- */
+div.subscribeContainer.container div a 
+{
+    color: lightslategray;
+}
+div.subscribeContainer.container a:hover
+{
+    color: cornflowerblue;
+}
+/* ---------------------------------------- */
+/* ==            LOGIN PAGE                */
+/*---------------------------------------- */
+.loginContainer form, .subscribeContainer form
+{
+    max-width: 330px;
+    margin: 0 auto;
+}
+/* ---------------------------------------- */
+/* ==            ROMAN PAGE               */
+/*---------------------------------------- */
+
+.romanContainer
+{
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.romanContainer .row 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.romanMainTitle
+{
+    margin-bottom:100px;
+    text-align: center;
+    background: url(../images/volcano.jpg)no-repeat center center;
+}
+.romanMainTitle h1
+{
+    color: white;
+    text-decoration: overline;
+}
+.romanMainTitle h2
+{
+    color: white;
+}
+/* ---------------------------------------- */
+/* ==            POST PAGE                */
+/*---------------------------------------- */
+div.addComContainer.container-fluid .row
+{
+   justify-content:center;
+}
+
+section.post_commentSection div.post_commentsContainer div.row
+{
+    justify-content: center;
+}
+
+div.post_commentsContainer.container article.row
+{
+    border-top: 1px solid lightgray;
+}
+
+div.post_commentsContainer.container a.btn.btn-default.btn-sm
+{
+    color:red;
+}
+div.post_commentsContainer.container div.col-md-10.col-sm-10
+{
+    margin: 0 auto;
+}
+div.post_commentsContainer.container header.text-center
+{
+    border: 1px solid black;
+}
+div#top_mainSection_PostView.mainSection p.chapter_slim
+{
+    height: 100%;
+    text-align: left;
+}
+/* ---------------------------------------- */
+/* ==            ABOUT ME PAGE                */
+/*---------------------------------------- */
+.aboutme
+{
+    margin-bottom: 120px;
+}
+/* ---------------------------------------- */
+/* ==            ADMIN PART                 */
+/*---------------------------------------- */
+
+/* GENERAL*/
+.mainAdminContainer.container-fluid
+{
+    margin-top: 80px; 
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+/*     ADMIN NAV TOP     */
+header#header.navAdmin.fixed-top
+{
+    top: 74px;
+    background: black;
+    color: white;
+    padding: 25px 0;
+    margin-bottom: 15px;
+    z-index: 10;
+}
+header#header.navAdmin.fixed-top i.fas.fa-user-cog
+{
+    color: white;
+    font-size: 1.5em;
+}
+header#header.navAdmin.fixed-top small
+{
+    color: rgba(255,255,255,0.3);
+}
+header#header.navAdmin.fixed-top div.dropdown
+{
+    padding-top: 10px;
+}
+header#header.navAdmin.fixed-top div.dropdown button
+{
+    background: lightgray;
+}
+header#header.navAdmin.fixed-top li
+{
+    padding: 5px;
+}
+/*     ADMIN SIDE NAV     */
+section#mainAdminSection a.head.list-group-item:hover
+{
+    background: cornflowerblue;
+}
+section#mainAdminSection div.list-group
+{
+    text-align: left;
+}
+/*     ADMIN DASHBOARD MAIN SECTION     */
+section#mainAdminSection
+{
+    margin-top: 220px;
+    margin-bottom: 50px;
+}
+section#mainAdminSection a.list-group-item, header#header.navAdmin.fixed-top a
+{
+    color: black;
+}
+section#mainAdminSection a.list-group-item:hover, header#header.navAdmin.fixed-top li:hover
+{
+    background: rgba(0,0,0,0.1);   
+}
+/*     ADMIN PANNEL SECTION     */
+section#mainAdminSection div.container div.row div.col-md-9 div.card div.card-body
+{
+    display: flex;
+    flex-direction: row;
+}
+/*     ADMIN ARTICLE PAGE     */
+section#mainAdminSection div.container div.row div.col-md-9 div.card div.adminArticles.card-body
+{
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section#mainAdminSection div.container div.row div.adminArticles.col-md-9 
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+section#mainAdminSection div.container div.row div.adminArticles.col-md-9 div.card-footer.text-muted div
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section#mainAdminSection div.card-footer.text-muted div.container div.col-md-6 a.btn.btn-secondary:hover
+{
+    background: white;
+    color: #6c757d;
+    border: #6c757d;
+}
+section#mainAdminSection div.card-footer.text-muted div.container div.col-md-6 a.btn.btn-outline-secondary:hover
+{
+    background: #6c757d;;
+    color: white;
+}
+section#mainAdminSection div.container div.row div.adminArticles.col-md-9 nav
+{
+    margin: 10px auto;
+}
+/*     ADMIN REPORTED COMMENTS PAGE     */
+section#mainAdminSection div.container div.row div.col-md-9 div.emptyReportedCom.alert
+{
+    background: white;
+    border: 1px solid #656582;
+    color: #ea7e7e;
+}
+section#mainAdminSection div.container div.row div.col-md-9 a.btn.btn-secondary.btn-sm
+{
+    color: cornflowerblue;
+}
+section#mainAdminSection div.container div.row div.col-md-9 a.btn.btn-danger.btn-sm
+{
+    color: #ea7e7e;
+}
+/*     ADMIN USERS PAGE     */
+section#mainAdminSection div.container div.row div.col-md-9 nav
+{
+    margin: 10px auto;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ---------------------------------------- */
+/* == MEDIA QUERIES                         */
+/*----------------------------------------- */
+
+@media only screen and (max-width: 600px)
+{
+    /*Home page: aside*/
+    div#previewChapter.container-fluid div.row aside.col-4
+    {
+        display: none;
+    }
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top a.navbar-brand
+    {
+        font-size: 1.2rem;
+    }
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 nav.navbar.navbar-dark
+    {
+        justify-content: center;
+    }
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 li
+    {
+        align-self: center;
+    }
+
+    /*Template page: footer*/
+    .footer_anchor
+    {
+        display: none;
+    }
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3.show div.dropdown-menu.dropdown-menu-lg-right.show
+    {
+        left:auto;
+    }
+    /*ADMIN pages: Navbar*/
+    header#header.navAdmin.fixed-top
+    {
+        top: 148px;
+    }
+    .deal_quote
+    {
+        display: none;
+    }
+    .dashboard_quote
+    {
+        display: none;
+    }
+    /*ADMIN pages: Main Page*/
+    section#mainAdminSection
+    {
+        margin-top: 340px;
+    }
+    /*Admin Pannel Section*/
+    section#mainAdminSection div.container div.row div.col-md-9 div.card div.card-body
+    {
+        flex-direction: column;
+    }
+    /*ADMIN: ComView*/
+    
+    .table td, .table tr
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .info_ligne
+    {
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 768px)
+{
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 nav.navbar.navbar-dark
+    {
+        justify-content: center;
+    }
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 li
+    {
+        align-self: center;
+    }
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3.show div.dropdown-menu.dropdown-menu-lg-right.show
+    {
+        left:auto;
+    }
+    /*ADMIN pages: Navbar*/
+    .deal_quote
+    {
+        display: none;
+    }
+    header#header.navAdmin.fixed-top
+    {
+        top: 168px;
+    }
+    /*ADMIN pages: Main Page*/
+    section#mainAdminSection
+    {
+        margin-top: 350px;
+    }
+    /*ADMIN: ComView*/
+    .info_ligne
+    {
+        display: none;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 991px)
+{
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 nav.navbar.navbar-dark
+    {
+        justify-content: center;
+    }
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.pos-f-t.col-lg-3 li
+    {
+        align-self: center;
+    }
+    /*Template page: Navbar*/
+    nav.fixMainBarr.main-navbar.navbar.fixed-top div.container-fluid div.btn-group.col-lg-3.show div.dropdown-menu.dropdown-menu-lg-right.show
+    {
+        left:auto;
+    }
+    /*ADMIN pages: Navbar*/
+    .deal_quote
+    {
+        display: none;
+    }
+    header#header.navAdmin.fixed-top
+    {
+        top: 168px;
+    }
+    /*ADMIN pages: Main Page*/
+    section#mainAdminSection
+    {
+        margin-top: 300px;
+    }
+}
